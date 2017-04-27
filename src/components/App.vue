@@ -88,6 +88,6 @@
         components: {
             CalendarDay,
             CurrentMonth
-        }
+        },
     }
 </script>

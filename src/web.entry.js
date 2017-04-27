@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import Vuex from 'vuex';
-Vue.use(Vuex);
+import Vuex from 'vuex'
+Vue.use(Vuex)
 
 import moment from 'moment-timezone';
 moment.tz.setDefault('UTC');
@@ -21,10 +21,7 @@ new Vue({
   store: {
     state: {
       currentYear: 2017,
-      currentMonth: 2
-    }, 
-    mutations: {
-      
+      currentMonth: 3
     }
   }
 });
