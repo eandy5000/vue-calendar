@@ -34,7 +34,8 @@
             },
             year() {
                 return this.$store.state.currentYear;
-            },
+            }
         }
     }
 </script>
+

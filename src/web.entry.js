@@ -9,6 +9,7 @@ Object.defineProperty(Vue.prototype, '$moment', { get() { return this.$root.mome
 
 import App from './components/App.vue';
 
+
 new Vue({
   el: '#app',
   data: {
