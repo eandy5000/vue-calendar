@@ -1,5 +1,7 @@
 <template>
-    <div :class="classObject"> 
+    <div 
+        :class="classObject"
+    > 
     {{day.format('D')}}
     </div>
 </template>
