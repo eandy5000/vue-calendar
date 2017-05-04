@@ -5,13 +5,23 @@ const app = express();
 const path = require('path');
 const fs = require('fs');
 const http = require('http');
+const bodyParser = require('body-parser');
+
+let events = [];
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   let template = fs.readFileSync(path.resolve('./index.html'), 'utf-8');
   res.send(template);
+});
 
+app.use(bodyParser.json())
+app.post('/add_event', (req, res) => {
+  console.log('success ', req.body);
+  events.push(req.body);
+  console.log(events);
+  res.sendStatus(200);
 });
 
 const server = http.createServer(app);
